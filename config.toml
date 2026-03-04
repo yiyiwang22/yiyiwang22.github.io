@@ -8,7 +8,7 @@
 # 20250619 取消了rss icon
 #本地环境测试用
 #baseURL = "http://localhost:1313/"   
-baseURL = "http://Braveoneone.github.io"   
+baseURL = "http://yiyiwang22.github.io"   
 title = "Yiyi Wang"
 enableRobotsTXT = true
 enableEmoji = true
