@@ -1,0 +1,10 @@
+{{ define "content" }}
+<div class="home-container">
+  <div class="post-content">
+    {{/* 相对 content 的完整路径 */}}
+    {{ with .Site.GetPage "post/aboutme.md" }}
+      {{ .Content }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}
