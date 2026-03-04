@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Test on Yiyi&#39;s personal website</title>
-    <link>http://localhost:1313/braveoneone/jane/categories/test/</link>
+    <link>http://localhost:1313/yiyiwang22/jane/categories/test/</link>
     <description>Recent content in Test on Yiyi&#39;s personal website</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Wed, 30 Aug 2017 15:43:48 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/braveoneone/jane/categories/test/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/yiyiwang22/jane/categories/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>This is a very long title This is a very long title This is a very long title This is a very long title This is a very long title</title>
-      <link>http://localhost:1313/braveoneone/jane/post/other/this-is-a-very-long-title/</link>
+      <link>http://localhost:1313/yiyiwang22/jane/post/other/this-is-a-very-long-title/</link>
       <pubDate>Wed, 30 Aug 2017 15:43:48 +0800</pubDate>
-      <guid>http://localhost:1313/braveoneone/jane/post/other/this-is-a-very-long-title/</guid>
+      <guid>http://localhost:1313/yiyiwang22/jane/post/other/this-is-a-very-long-title/</guid>
       <description>&lt;p&gt;This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title&lt;/p&gt;</description>
     </item>
   </channel>

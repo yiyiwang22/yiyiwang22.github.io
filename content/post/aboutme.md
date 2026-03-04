@@ -5,7 +5,7 @@ hide_meta: true
 ---
 <h1 style="font-family: Georgia, 'Times New Roman', serif; line-height: 1.6; color: #ff6600;font-style: italic;">About me</h1>
 
-![Avatar](https://braveoneone.github.io/me.jpeg) 
+![Avatar](https://yiyiwang22.github.io/me.jpeg) 
       <!-- Hi everyone, I'm Yiyi Wang, a Ph.D. student in Computer Science & Engineering at University of South Florida. 
       Currently, I am in **Pi Lab**, under the supervision of Prof. 
       [Jiajun Huang](https://jiajunhuang1999.github.io).
@@ -19,7 +19,7 @@ hide_meta: true
   I got my master degree in Language Technology at University of Gothenburg.
 </p>
 <p style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.6;font-style: italic; ">
-Recently, I was exploring the MPI communication on GPUs in a molecular dynamic software Gromacs. You can find some of my recent documents<a href="https://github.com/Braveoneone/MPI_Env_Note" style="color: #ff6600; text-decoration: none;"> here.</a>.
+Recently, I was exploring the MPI communication on GPUs in a molecular dynamic software Gromacs. You can find some of my recent documents<a href="https://github.com/yiyiwang22/MPI_GPU_Gromacs" style="color: #ff6600; text-decoration: none;"> here.</a>.
 </p>
 <h3 style="font-family: Georgia, 'Times New Roman', serif; line-height: 1.5; font-style: italic;"> Highlight Projects </h3>
 <h4 style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.5; font-style: italic;">Master Thesis (Independent)</h4>
@@ -36,25 +36,25 @@ Student Intern in <a href="https://sinch.com">Sinch</a>
 Software Engineer
 </p>
 <ul style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.5;font-style: italic;">
- <li><a href="https://github.com/Braveoneone/LintCustomisation/tree/main">LintCustomisation Generator using Java</a></li>
+ <li><a href="https://github.com/yiyiwang22/LintCustomisation/tree/main">LintCustomisation Generator using Java</a></li>
 </ul> 
 
 <h4 style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.5;font-style: italic;">Master Project (Independent)</h4>
 <ul style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.5;font-style: italic;">
- <li><a href="https://github.com/Braveoneone/final-project-dialogue-system2/blob/main/README.md">Travel recommendation implemented with NLG and NLU based on Microsoft Azure</a></li>
+ <li><a href="https://github.com/yiyiwang22/final-project-dialogue-system2/blob/main/README.md">Travel recommendation implemented with NLG and NLU based on Microsoft Azure</a></li>
 </ul>
 
 
 <h4 style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.5;font-style: italic;">Undergraduate Project (Independent)</h4>
 <ul style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.5;font-style: italic;">
- <li><a href="https://raw.githubusercontent.com/Braveoneone/Braveoneone.github.io/3276570222ff8c48ea502f54f8d34d24e251bd26/static/cpuVHDL.pdf">Multi-cycle pipelined CPU hardware simulation</a></li>
+ <li><a href="https://raw.githubusercontent.com/yiyiwang22/yiyiwang22.github.io/3276570222ff8c48ea502f54f8d34d24e251bd26/static/cpuVHDL.pdf">Multi-cycle pipelined CPU hardware simulation</a></li>
 </ul>
 
 
 <h6 style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.5;font-style: italic;"> Links </h6>
 
 <ul style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.5; font-style: italic;">
-  <li><a href="https://github.com/Braveoneone">My GitHub</a></li>
+  <li><a href="https://github.com/yiyiwang22">My GitHub</a></li>
   <li><a href="https://www.linkedin.com/in/yiyi-wang-0551b7179/">My Linkdin</a></li>
 </ul>
 
