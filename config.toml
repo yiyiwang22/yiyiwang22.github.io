@@ -37,11 +37,11 @@ defaultContentLanguage = "en"           # Default language to use
   priority = 0.5
   filename = "sitemap.xml"
 
-[[menu.main]]             # config your menu              # 配置目录
-  name = "About me"
-  weight = 10
-  identifier = "home"
-  url = "/post/aboutme"
+# [[menu.main]]             # config your menu              # 配置目录
+#  name = "About me"
+#  weight = 10
+#  identifier = "home"
+#  url = "/post/aboutme"
 # [[menu.main]]
 #   name = "posts"
 #   weight = 20

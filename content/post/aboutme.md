@@ -54,5 +54,3 @@ Software Engineer
 
 <h6 style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.5; font-style: italic;"> Interests </h6>
 <p style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.5;font-style: italic">I enjoy popping dance and writing rap songs. </p>
-
- 
