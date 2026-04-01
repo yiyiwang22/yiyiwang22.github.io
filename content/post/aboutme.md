@@ -6,20 +6,14 @@ hide_meta: true
 <h1 style="font-family: Georgia, 'Times New Roman', serif; line-height: 1.6; color: #ff6600;font-style: italic;">About me</h1>
 
 ![Avatar](https://yiyiwang22.github.io/me.jpeg) 
-      <!-- Hi everyone, I'm Yiyi Wang, a Ph.D. student in Computer Science & Engineering at University of South Florida. 
-      Currently, I am under the supervision of Prof. 
-      [Shareef Ahmed](http://shareefahmed.myweb.usf.edu/).
-      I got my bachelor degree in Computer Science and Technology at Wuhan University. 
-      I got my master degree in Language Technology at University of Gothenburg. -->
 <p style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.6;font-style: italic; ">
-  Hi everyone, I'm Yiyi Wang, a Ph.D. student in Computer Science & Engineering at University of South Florida. 
-  Previously, I was under the supervision of Prof. Shareef Ahmed
-  <a href="http://shareefahmed.myweb.usf.edu/" style="color: #ff6600; text-decoration: none;">Shareef Ahmed</a>.
-  I got my bachelor degree in Computer Science and Technology at Wuhan University. 
-  I got my master degree in Language Technology at University of Gothenburg.
-</p>
+Hi everyone, I'm Yiyi Wang, a Ph.D. student in Computer Science and Engineering at the University of South Florida. Currently, I am conducting research under the supervision of Prof. <a href="http://shareefahmed.myweb.usf.edu/" style="color: #ff6600; text-decoration: none;">Shareef Ahmed</a>.
+
 <p style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.6;font-style: italic; ">
-Before, I was exploring the MPI communication on GPUs in a molecular dynamic software Gromacs. You can find some of my former documents<a href="https://github.com/yiyiwang22/MPI_GPU_Gromacs" style="color: #ff6600; text-decoration: none;"> here.</a>.
+My current research interests lie primarily in Real-Time Systems (RTS) and Operating Systems. I focus on exploring and developing predictable scheduling frameworks to optimize underlying system performance and resource allocation.
+
+<p style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.6;font-style: italic; ">
+Prior to my current work, I explored MPI communication optimizations for GPU-accelerated molecular dynamics (Gromacs). I hold a Master's degree in Language Technology from the University of Gothenburg and a B.Eng. in Computer Science and Technology from Wuhan University. You can find some of my former research documents [<a href="https://github.com/yiyiwang22/MPI_GPU_Gromacs" style="color: #ff6600; text-decoration: none;"> here</a>].
 </p>
 <h3 style="font-family: Georgia, 'Times New Roman', serif; line-height: 1.5; font-style: italic;"> Highlight Projects </h3>
 <h4 style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.5; font-style: italic;">Master Thesis (Independent)</h4>
