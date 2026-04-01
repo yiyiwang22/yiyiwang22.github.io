@@ -66,7 +66,7 @@
 
 
 
-<link rel="stylesheet" href="/css/style.min.3192911ce2027939f499450e427421d0585c15bc6f1b271b3e07904648decef4.css" integrity="sha256-MZKRHOICeTn0mUUOQnQh0FhcFbxvGycbPgeQRkjezvQ=" media="screen"
+<link rel="stylesheet" href="/css/style.min.845b7c5f90623563d398dc4a5db7d0139c9e3c4f108e4139b2b7bbcfdbd6ad1b.css" integrity="sha256-hFt8X5BiNWPTmNxKXbfQE5yePE8QjkE5sre7z9vWrRs=" media="screen"
   crossorigin="anonymous">
 
 
@@ -156,10 +156,17 @@
 
 <div class="mobile-header">
   <div id="mobile-navbar" class="mobile-navbar">
-    <div id="mobile-navbar-icon" class="mobile-navbar-icon">
-      
-<svg aria-hidden="true" class="lucide lucide-menu hi-svg-inline icon--menu" fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+    
+    <div class="mobile-navbar-icon">
+      <a class="theme-toggle menu-item-link" href="javascript:void(0);" style="display: flex; align-items: center;">
+        
+<svg aria-hidden="true" class="lucide lucide-sun hi-svg-inline theme-icon-light" fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+
+        
+<svg aria-hidden="true" class="lucide lucide-moon hi-svg-inline theme-icon-dark" fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+      </a>
     </div>
+
     <div class="mobile-navbar-logo">
       <a href="/" class="logo"> </a>
     </div>
@@ -171,36 +178,18 @@
       <li class="mobile-menu-item">
         
         
-        
         <a class="menu-item-link" href="http://yiyiwang22.github.io/post/aboutme/"></a>
         
         
       </li>
-      
 
       
 
-      <li class="mobile-menu-item">
-        <a class="theme-toggle menu-item-link" href="javascript:void(0);">
+      
 
-          
-<svg aria-hidden="true" class="lucide lucide-sun hi-svg-inline theme-icon-light" fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
-
-          
-<svg aria-hidden="true" class="lucide lucide-moon hi-svg-inline theme-icon-dark" fill="none" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-
-        </a>
-      </li>
-
-      <li class="mobile-menu-item">
-        
-        
-        
-      </li>
-    </ul>
+      </ul>
   </nav>
 </div>
-
   </header>
 
   
@@ -403,25 +392,26 @@
 </html>
 <style>
    
-  main.pico.container, 
-  .home-container {
-    max-width: 100% !important;    
-    margin-left: 0 !important;     
-    margin-right: auto !important;  
-    display: block !important;
+  @media (min-width: 769px) {
+    main.pico.container, .home-container {
+      max-width: 100% !important;
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+    }
+    .post-content {
+      max-width: 750px !important;  
+      margin-left: 0 !important;
+      margin-right: auto !important;
+      padding-left: 5% !important;
+    }
   }
 
-   
-  .post-content {
-    margin-left: 0 !important;
-    margin-right: auto !important;
-    
-     
-    max-width: 900px !important;   
-     
-    
-    padding-left: 2rem !important;  
-    width: 100% !important;         
-    text-align: left !important;
+  
+</style>
+
+<style>
+  .social-link {  
+    margin: 0 5px !important;
+    display: flex !important;
   }
 </style>
