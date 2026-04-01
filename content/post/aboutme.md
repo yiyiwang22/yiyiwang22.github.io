@@ -7,19 +7,19 @@ hide_meta: true
 
 ![Avatar](https://yiyiwang22.github.io/me.jpeg) 
       <!-- Hi everyone, I'm Yiyi Wang, a Ph.D. student in Computer Science & Engineering at University of South Florida. 
-      Currently, I am in **Pi Lab**, under the supervision of Prof. 
-      [Jiajun Huang](https://jiajunhuang1999.github.io).
+      Currently, I am under the supervision of Prof. 
+      [Shareef Ahmed](http://shareefahmed.myweb.usf.edu/).
       I got my bachelor degree in Computer Science and Technology at Wuhan University. 
       I got my master degree in Language Technology at University of Gothenburg. -->
 <p style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.6;font-style: italic; ">
   Hi everyone, I'm Yiyi Wang, a Ph.D. student in Computer Science & Engineering at University of South Florida. 
-  Previously, I was under the supervision of Prof. 
-  <a href="https://jiajunhuang1999.github.io" style="color: #ff6600; text-decoration: none;">Jiajun Huang</a>.
+  Previously, I was under the supervision of Prof. Shareef Ahmed
+  <a href="http://shareefahmed.myweb.usf.edu/" style="color: #ff6600; text-decoration: none;">Shareef Ahmed</a>.
   I got my bachelor degree in Computer Science and Technology at Wuhan University. 
   I got my master degree in Language Technology at University of Gothenburg.
 </p>
 <p style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.6;font-style: italic; ">
-Recently, I was exploring the MPI communication on GPUs in a molecular dynamic software Gromacs. You can find some of my recent documents<a href="https://github.com/yiyiwang22/MPI_GPU_Gromacs" style="color: #ff6600; text-decoration: none;"> here.</a>.
+Before, I was exploring the MPI communication on GPUs in a molecular dynamic software Gromacs. You can find some of my former documents<a href="https://github.com/yiyiwang22/MPI_GPU_Gromacs" style="color: #ff6600; text-decoration: none;"> here.</a>.
 </p>
 <h3 style="font-family: Georgia, 'Times New Roman', serif; line-height: 1.5; font-style: italic;"> Highlight Projects </h3>
 <h4 style="font-family: Georgia, 'Times New Roman', serif; font-size: 1rem; line-height: 1.5; font-style: italic;">Master Thesis (Independent)</h4>

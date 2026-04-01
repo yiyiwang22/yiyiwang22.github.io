@@ -4,8 +4,11 @@
     <title>Tags on Yiyi Wang</title>
     <link>http://yiyiwang22.github.io/tags/</link>
     <description>Recent content in Tags on Yiyi Wang</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://yiyiwang22.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="http://yiyiwang22.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>
