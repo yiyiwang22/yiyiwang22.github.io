@@ -64,5 +64,5 @@ Software Engineer
 </div> -->
 <br>
 <div align="center" style="width: 600px; max-width: 100%; margin: 0 auto; border-radius: 0 !important;">
-  <script type="text/javascript" id="clustrmaps" src="https://cdn.clustrmaps.com/map_v2.js?d=lpdu7lj6oKwOF761F_SjmogNM_pPDnmD1qu6UgfcAEs&cl=ffffff&w=a&t=m&co=2d78ad&ct=ffffff"></script>
+ <script type="text/javascript" id="clustrmaps" src="https://www.clustrmaps.com/map_v2.js?d=lpdu7lj6oKwOF761F_SjmogNM_pPDnmD1qu6UgfcAEs&cl=ffffff&w=a&t=m&co=2d78ad&ct=ffffff"></script>
 </div>
