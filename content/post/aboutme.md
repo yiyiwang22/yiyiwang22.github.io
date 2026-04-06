@@ -152,8 +152,5 @@ hide_meta: true
     <script type="text/javascript" id="clustrmaps" src="https://www.clustrmaps.com/map_v2.js?d=lpdu7lj6oKwOF761F_SjmogNM_pPDnmD1qu6UgfcAEs&cl=ffffff&w=a&t=m&co=2d78ad&ct=ffffff"></script>
   </div>
   
-  <div class="geek-badge">
-    <p>💻 Hand-written code. No AI involvement. 100% human-written.</p>
-  </div>
 
 </div>
