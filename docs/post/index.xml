@@ -4,92 +4,15 @@
     <title>Posts on Yiyi Wang</title>
     <link>http://yiyiwang22.github.io/post/</link>
     <description>Recent content in Posts on Yiyi Wang</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en</language>
-    
-        <atom:link href="http://yiyiwang22.github.io/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <atom:link href="http://yiyiwang22.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
       <link>http://yiyiwang22.github.io/post/aboutme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>http://yiyiwang22.github.io/post/aboutme/</guid>
-      
-        <description>&lt;style&gt;
-  /* 核心样式表：采用深海蓝调，提升专业感并保护视力 */
-  .profile-wrapper {
-    font-family: Georgia, &#39;Times New Roman&#39;, serif;
-    line-height: 1.6;
-    color: #333;
-    font-size: 1rem;
-  }
-  
-  /* 标题样式：使用深海蓝色 (#2a4d69) 替换橙色 */
-  .profile-wrapper h1, 
-  .profile-wrapper h3, 
-  /* .profile-wrapper h4,  */
-  .profile-wrapper h6 {
-    color: #c99dfa; 
-    font-style: italic;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-  }
-  
-  /* 超链接样式：深蓝色调，加粗以示区分 */
-  .profile-wrapper a {
-    color: #c99dfa;
-    text-decoration: none;
-    font-weight: bold;
-    border-bottom: 1px solid transparent;
-    transition: all 0.3s ease;
-  }
-  .profile-wrapper a:hover {
-    color: #2a4d69;
-    border-bottom: 1px solid #2a4d69;
-  }
-  
-  /* 段落间距 */
-  .profile-wrapper p {
-    margin-bottom: 1.2em;
-  }
-
-  /* 列表样式优化 */
-  .profile-wrapper ul {
-    margin-left: 20px;
-    margin-bottom: 1.5em;
-  }
-  .profile-wrapper li {
-    margin-bottom: 0.6em;
-  }
-  
-  /* 头像样式 */
-  .avatar-img {
-    max-width: 200px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-    display: block;
-  }
-
-  /* 底部硬核徽章 */
-  .geek-badge {
-    font-size: 0.85rem;
-    color: #7f8c8d;
-    font-style: italic;
-    text-align: center;
-    margin-top: 40px;
-    border-top: 1px solid #ecf0f1;
-    padding-top: 15px;
-  }
-&lt;/style&gt;
-&lt;div class=&#34;profile-wrapper&#34;&gt;
-  &lt;h1&gt;About me&lt;/h1&gt;
-  &lt;img src=&#34;https://yiyiwang22.github.io/me.jpeg&#34; alt=&#34;Yiyi Wang Avatar&#34; class=&#34;avatar-img&#34;&gt; 
-  &lt;p&gt;Hi everyone, I&#39;m &lt;strong&gt;Yiyi Wang&lt;/strong&gt;, a Ph.D. student in Computer Science and Engineering at the University of South Florida. Currently, I am conducting research under the supervision of Prof. &lt;a href=&#34;http://shareefahmed.myweb.usf.edu/&#34;&gt;Shareef Ahmed&lt;/a&gt;.&lt;/p&gt;</description>
-      
+      <description>&lt;style&gt;&#xA;  /* 核心样式表：采用深海蓝调，提升专业感并保护视力 */&#xA;  .profile-wrapper {&#xA;    font-family: Georgia, &#39;Times New Roman&#39;, serif;&#xA;    line-height: 1.6;&#xA;    color: #333;&#xA;    font-size: 1rem;&#xA;  }&#xA;  &#xA;  /* 标题样式：使用深海蓝色 (#2a4d69) 替换橙色 */&#xA;  .profile-wrapper h1, &#xA;  .profile-wrapper h3 {&#xA;    color: #c99dfa; &#xA;    font-style: italic;&#xA;    margin-top: 0.8em;&#xA;    margin-bottom: 0.5em;&#xA;  }&#xA;  .profile-wrapper h4{&#xA;    font-style: italic;&#xA;    margin-top: 0.1em;&#xA;    margin-bottom: 0.1em;&#xA;  }&#xA;    .profile-wrapper h6{&#xA;    color: #c99dfa; &#xA;    font-style: italic;&#xA;    margin-top: 0.1em;&#xA;    margin-bottom: 0.1em;&#xA;  }&#xA;  /* 超链接样式：深蓝色调，加粗以示区分 */&#xA;  .profile-wrapper a {&#xA;    color: #8c9fe2;&#xA;    text-decoration: underline;&#xA;    font-weight: bold;&#xA;    border-bottom: 1px solid transparent;&#xA;    transition: all 0.3s ease;&#xA;  }&#xA;  .profile-wrapper a:hover {&#xA;    color: #2a4d69;&#xA;    border-bottom: 1px solid #2a4d69;&#xA;  }&#xA;  &#xA;  /* 段落间距 */&#xA;  .profile-wrapper p {&#xA;    margin-bottom: 0.5em;&#xA;  }&#xA;&#xA;  /* 列表样式优化 */&#xA;  .profile-wrapper ul {&#xA;    margin-left: 20px;&#xA;    margin-bottom: 1.0em;&#xA;  }&#xA;  .profile-wrapper li {&#xA;    margin-bottom: 0.6em;&#xA;  }&#xA;  &#xA;  /* 头像样式 */&#xA;  .avatar-img {&#xA;    max-width: 150px;&#xA;    border-radius: 8px;&#xA;    box-shadow: 0 4px 12px rgba(0,0,0,0.1);&#xA;    margin-bottom: 20px;&#xA;    display: block;&#xA;  }&#xA;&#xA;  /* 底部硬核徽章 */&#xA;  .geek-badge {&#xA;    font-size: 0.85rem;&#xA;    color: #7f8c8d;&#xA;    font-style: italic;&#xA;    text-align: center;&#xA;    margin-top: 40px;&#xA;    border-top: 1px solid #ecf0f1;&#xA;    padding-top: 15px;&#xA;  }&#xA;&lt;/style&gt;&#xA;&lt;div class=&#34;profile-wrapper&#34;&gt;&#xA;  &lt;h1&gt;About me&lt;/h1&gt;&#xA;  &lt;img src=&#34;https://yiyiwang22.github.io/me.jpeg&#34; alt=&#34;Yiyi Wang Avatar&#34; class=&#34;avatar-img&#34;&gt; &#xA;  &lt;p&gt;Hi everyone, I&#39;m &lt;strong&gt;Yiyi Wang&lt;/strong&gt;, a Ph.D. student in Computer Science and Engineering at the University of South Florida. Currently, I am conducting research under the supervision of Prof. &lt;a href=&#34;http://shareefahmed.myweb.usf.edu/&#34;&gt;Shareef Ahmed&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

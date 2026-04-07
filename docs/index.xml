@@ -28,19 +28,27 @@
   
   /* 标题样式：使用深海蓝色 (#2a4d69) 替换橙色 */
   .profile-wrapper h1, 
-  .profile-wrapper h3, 
-  /* .profile-wrapper h4,  */
-  .profile-wrapper h6 {
+  .profile-wrapper h3 {
     color: #c99dfa; 
     font-style: italic;
-    margin-top: 1.5em;
+    margin-top: 0.8em;
     margin-bottom: 0.5em;
   }
-  
+  .profile-wrapper h4{
+    font-style: italic;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+  }
+    .profile-wrapper h6{
+    color: #c99dfa; 
+    font-style: italic;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+  }
   /* 超链接样式：深蓝色调，加粗以示区分 */
   .profile-wrapper a {
-    color: #c99dfa;
-    text-decoration: none;
+    color: #8c9fe2;
+    text-decoration: underline;
     font-weight: bold;
     border-bottom: 1px solid transparent;
     transition: all 0.3s ease;
@@ -52,13 +60,13 @@
   
   /* 段落间距 */
   .profile-wrapper p {
-    margin-bottom: 1.2em;
+    margin-bottom: 0.5em;
   }
 
   /* 列表样式优化 */
   .profile-wrapper ul {
     margin-left: 20px;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.0em;
   }
   .profile-wrapper li {
     margin-bottom: 0.6em;
@@ -66,7 +74,7 @@
   
   /* 头像样式 */
   .avatar-img {
-    max-width: 200px;
+    max-width: 150px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     margin-bottom: 20px;

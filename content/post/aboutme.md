@@ -15,19 +15,27 @@ hide_meta: true
   
   /* 标题样式：使用深海蓝色 (#2a4d69) 替换橙色 */
   .profile-wrapper h1, 
-  .profile-wrapper h3, 
-  /* .profile-wrapper h4,  */
-  .profile-wrapper h6 {
+  .profile-wrapper h3 {
     color: #c99dfa; 
     font-style: italic;
-    margin-top: 1.5em;
+    margin-top: 0.8em;
     margin-bottom: 0.5em;
   }
-  
+  .profile-wrapper h4{
+    font-style: italic;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+  }
+    .profile-wrapper h6{
+    color: #c99dfa; 
+    font-style: italic;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+  }
   /* 超链接样式：深蓝色调，加粗以示区分 */
   .profile-wrapper a {
-    color: #c99dfa;
-    text-decoration: none;
+    color: #8c9fe2;
+    text-decoration: underline;
     font-weight: bold;
     border-bottom: 1px solid transparent;
     transition: all 0.3s ease;
@@ -39,13 +47,13 @@ hide_meta: true
   
   /* 段落间距 */
   .profile-wrapper p {
-    margin-bottom: 1.2em;
+    margin-bottom: 0.5em;
   }
 
   /* 列表样式优化 */
   .profile-wrapper ul {
     margin-left: 20px;
-    margin-bottom: 1.5em;
+    margin-bottom: 1.0em;
   }
   .profile-wrapper li {
     margin-bottom: 0.6em;
@@ -53,7 +61,7 @@ hide_meta: true
   
   /* 头像样式 */
   .avatar-img {
-    max-width: 200px;
+    max-width: 150px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     margin-bottom: 20px;
@@ -82,13 +90,12 @@ hide_meta: true
 
   <p>My research is deeply rooted in <strong>Real-Time Systems (RTS)</strong> and <strong>Operating Systems</strong>. I focus on exploring and developing predictable scheduling frameworks to optimize underlying system performance and resource allocation.</p>
 
- <p>My passion for systems was ignited during my undergraduate years at Wuhan University, where I <strong>built a 5-stage pipelined CPU from scratch</strong>. Academically, I maintained a record of excellence, <strong>ranking in the top 10%</strong> of my major with an overall <strong>GPA of 3.73/4.0</strong>.</p> To broaden my technical horizon, I spent two years exploring Language Technology at the University of Gothenburg, where I graduated with my master's thesis passing with <em>Distinction</em>.</p>
+ <p>My passion for systems was ignited during my undergraduate years at Wuhan University, where I <strong>built a 5-stage pipelined CPU</strong>. Academically, I maintained a record of excellence, <strong>ranking in the top 10%</strong> of my major with an overall <strong>GPA of 3.73/4.0</strong>.</p> To broaden my technical horizon, I spent two years exploring Language Technology at the University of Gothenburg, where I graduated with my master's thesis passing with <strong>Distinction</strong>.</p>
 
  
- <p>Now, I have returned to my core interest: high-performance computing and operating systems. Previously, I also explored <strong>MPI</strong> communication optimizations for <strong>GPU-accelerated</strong> molecular dynamics (Gromacs). You can find some of my former research documents [<a href="https://github.com/yiyiwang22/MPI_GPU_Gromacs">here</a>].</p>
+ <p>Now, I have returned to my core interest: operating systems and high-performance computing. Previously, I also explored <strong>MPI</strong> communication optimizations for <strong>GPU-accelerated</strong> molecular dynamics (Gromacs). You can find some of my former research documents [<a href="https://github.com/yiyiwang22/MPI_GPU_Gromacs">here</a>].</p>
 
   <h3>Core Projects</h3>
-
   <h4>Undergraduate Project (Independent, 2017)</h4>
   <ul>
     <li><strong><a href="https://raw.githubusercontent.com/yiyiwang22/yiyiwang22.github.io/3276570222ff8c48ea502f54f8d34d24e251bd26/static/cpuVHDL.pdf">Multi-cycle pipelined CPU hardware simulation</a></strong>
@@ -112,16 +119,16 @@ hide_meta: true
     </li>
   </ul> 
 
-  <h3>Research Explorations in Language Tech</h3>
+  <h3>Explorations in Language Tech</h3>
 
   <h4>Master Thesis (Independent, 2025)</h4>
   <p><em>Student Intern in <a href="https://sinch.com">Sinch</a></em></p>
   <ul>
     <li><strong>Prompt strategy on the code generation by LLMs</strong> <em>(Pass with Distinction)</em> 
       <ul>
-        <li>Evaluated the performance of <strong>Gemini</strong> and <strong>DeepSeek-R1</strong> models using the MBPP benchmark, achieving a pass@3 score of 79.4% with DeepSeek-R1.</li>
+        <li>Evaluated the performance of Gemini-Flash and DeepSeek-R1 models using the MBPP benchmark, achieving a pass@3 score of 79.4% with DeepSeek-R1.</li>
         <li>Demonstrated that DeepSeek-R1’s accuracy (86.8%) is competitive with ChatGPT Plus (87.5%) in specialized code generation tasks.</li>
-        <li>Optimized grammatical correctness of generated code by implementing advanced prompting strategies, including <strong>Chain-of-Thought (CoT)</strong>, persona engineering, and few-shot learning.</li>
+        <li>Optimized grammatical correctness of generated code by implementing advanced prompting strategies, including Chain-of-Thought (CoT), persona engineering, and few-shot learning.</li>
       </ul>
     </li>
   </ul> 
@@ -130,8 +137,8 @@ hide_meta: true
   <ul>
     <li><strong><a href="https://github.com/yiyiwang22/final-project-dialogue-system2/blob/main/README.md">Travel recommendation implemented with NLG and NLU based on Microsoft Azure</a></strong>
       <ul>
-        <li>Developed a robust voice-interaction application integrating <strong>Azure Speech Studio</strong> for real-time ASR (Speech Recognition) and TTS (Text-to-Speech).</li>
-        <li>Implemented complex conversation state management using the <strong>XState</strong> library, achieving high robustness and visualized state transitions.</li>
+        <li>Developed a robust voice-interaction application integrating Azure Speech Studio for real-time ASR (Speech Recognition) and TTS (Text-to-Speech).</li>
+        <li>Implemented complex conversation state management using the XState library, achieving high robustness and visualized state transitions.</li>
         <li>Enabled dynamic audio configuration for voice tone, speaking speed, and intonation to enhance user experience.</li>
       </ul>
     </li>
@@ -144,7 +151,7 @@ hide_meta: true
   </ul>
 
   <h6>Interests</h6>
-  <p>I enjoy popping dance and writing rap songs. 🎤 </p>
+  <p>I enjoy popping dance and writing rap songs. </p>
 
   <br>
 
