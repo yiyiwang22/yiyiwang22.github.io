@@ -86,14 +86,11 @@ hide_meta: true
 
   <img src="https://yiyiwang22.github.io/me.jpeg" alt="Yiyi Wang Avatar" class="avatar-img"> 
 
-  <p>Hi everyone, I'm <strong>Yiyi Wang</strong>, a Ph.D. student in Computer Science and Engineering at the University of South Florida. Currently, I am conducting research under the supervision of Prof. <a href="http://shareefahmed.myweb.usf.edu/">Shareef Ahmed</a>.</p>
+  <p>Hi everyone, I'm <strong>Yiyi Wang</strong>, a Ph.D. student in Computer Science and Engineering at the University of South Florida. Currently, I am advised by Prof. <a href="http://shareefahmed.myweb.usf.edu/">Shareef Ahmed</a>.</p>
 
-  <p>My research is deeply rooted in <strong>Real-Time Systems (RTS)</strong> and <strong>Operating Systems</strong>. I focus on exploring and developing predictable scheduling frameworks to optimize underlying system performance and resource allocation.</p>
+  <p>My research is deeply rooted in <strong>Real-Time Systems (RTS)</strong>. I focus on exploring and developing predictable scheduling frameworks to optimize underlying system performance and resource allocation.</p>
 
  <p>My passion for systems was ignited during my undergraduate years at Wuhan University, where I <strong>built a 5-stage pipelined CPU</strong>. Academically, I maintained a record of excellence, <strong>ranking in the top 10%</strong> of my major with an overall <strong>GPA of 3.73/4.0</strong>.</p> To broaden my technical horizon, I spent two years exploring Language Technology at the University of Gothenburg, where I graduated with my master's thesis passing with <strong>Distinction</strong>.</p>
-
- 
- <p>Now, I have returned to my core interest: operating systems and high-performance computing. Previously, I also explored <strong>MPI</strong> communication optimizations for <strong>GPU-accelerated</strong> molecular dynamics (Gromacs). You can find some of my former research documents [<a href="https://github.com/yiyiwang22/MPI_GPU_Gromacs">here</a>].</p>
 
   <h3>Core Projects</h3>
   <h4>Undergraduate Project (Independent, 2017)</h4>
@@ -156,8 +153,8 @@ hide_meta: true
   <br>
 
   <div align="center" style="width: 100%; max-width: 600px; margin: 0 auto;">
-    <script type="text/javascript" id="clustrmaps" src="https://www.clustrmaps.com/map_v2.js?d=lpdu7lj6oKwOF761F_SjmogNM_pPDnmD1qu6UgfcAEs&cl=ffffff&w=a&t=m&co=2d78ad&ct=ffffff"></script>
-  </div>
+    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=-GaSbw50DLBdzn-j28l6bWkfIuvhsMmIZ8RSzzEb-6g&cl=ffffff&w=a"></script>
+      </div>
   
 
 </div>

@@ -4,8 +4,11 @@
     <title>Categories on Yiyi Wang</title>
     <link>http://yiyiwang22.github.io/categories/</link>
     <description>Recent content in Categories on Yiyi Wang</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <atom:link href="http://yiyiwang22.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+        <atom:link href="http://yiyiwang22.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>
