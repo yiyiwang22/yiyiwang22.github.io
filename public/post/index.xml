@@ -19,7 +19,7 @@
       
         <description>&lt;style&gt;
 /* =========================================================
-   Academic Homepage — Yiyi Wang
+   Academic Homepage — Yiyi Wang (Dark Mode Supported)
    ========================================================= */
 
 .profile-wrapper {
@@ -27,25 +27,82 @@
   --accent-dark: #687bc9;
   --purple: #c99dfa;
 
+  /* ================= 日间模式 (Light Mode) 颜色 ================= */
   --text-main: #303640;
-  --text-secondary: #596373;
+  --text-bold: #2e3440;
+  --text-role: #3e4758;
+  --text-affil: #68717f;
+  --text-detail: #737d8c;
+
+  --bg-card: linear-gradient(135deg, rgba(244, 247, 252, 0.95), rgba(250, 247, 253, 0.95));
+  --bg-edu: rgba(247, 243, 252, 0.48);
+  --border-card: rgba(140, 159, 226, 0.16);
+  --avatar-border: rgba(255, 255, 255, 0.9);
+
+  --note-text: #8b6bb0;
+  --note-bg: rgba(180, 135, 230, 0.09);
+  
+  --shadow-card: 0 8px 26px rgba(55, 65, 81, 0.07);
+  --shadow-pub: 0 3px 12px rgba(55, 65, 81, 0.045);
 
   max-width: 1000px;
   margin: 0 auto;
   padding: 18px 22px 36px;
-
-  font-family: -apple-system, BlinkMacSystemFont, &#34;Segoe UI&#34;,
-               Roboto, Helvetica, Arial, sans-serif !important;
-
+  font-family: -apple-system, BlinkMacSystemFont, &#34;Segoe UI&#34;, Roboto, Helvetica, Arial, sans-serif !important;
   font-size: 17px !important;
   line-height: 1.65 !important;
   color: var(--text-main) !important;
 }
 
-/* 基础文本与粗体 */
+/* ================= 夜间模式 (Dark Mode) 颜色 ================= */
+/* 1. 适配系统级夜间模式 (如 macOS/Windows 系统设置为深色) */
+@media (prefers-color-scheme: dark) {
+  .profile-wrapper {
+    --text-main: #e5e7eb !important;
+    --text-bold: #f9fafb !important;
+    --text-role: #d1d5db !important;
+    --text-affil: #9ca3af !important;
+    --text-detail: #9ca3af !important;
+
+    --bg-card: rgba(31, 41, 55, 0.6) !important;
+    --bg-edu: rgba(55, 65, 81, 0.4) !important;
+    --border-card: rgba(255, 255, 255, 0.1) !important;
+    --avatar-border: #374151 !important;
+
+    --note-text: #c99dfa !important;
+    --note-bg: rgba(180, 135, 230, 0.15) !important;
+
+    --shadow-card: 0 8px 26px rgba(0, 0, 0, 0.5) !important;
+    --shadow-pub: 0 3px 12px rgba(0, 0, 0, 0.4) !important;
+  }
+}
+
+/* 2. 适配网站自带的夜间模式切换按钮 (Hugo 主题常用的全局 class) */
+html.dark .profile-wrapper,
+body.dark .profile-wrapper,
+[data-theme=&#34;dark&#34;] .profile-wrapper {
+  --text-main: #e5e7eb !important;
+  --text-bold: #f9fafb !important;
+  --text-role: #d1d5db !important;
+  --text-affil: #9ca3af !important;
+  --text-detail: #9ca3af !important;
+
+  --bg-card: rgba(31, 41, 55, 0.6) !important;
+  --bg-edu: rgba(55, 65, 81, 0.4) !important;
+  --border-card: rgba(255, 255, 255, 0.1) !important;
+  --avatar-border: #374151 !important;
+
+  --note-text: #c99dfa !important;
+  --note-bg: rgba(180, 135, 230, 0.15) !important;
+
+  --shadow-card: 0 8px 26px rgba(0, 0, 0, 0.5) !important;
+  --shadow-pub: 0 3px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* ================= 基础组件样式 ================= */
+
 .profile-wrapper p {
-  font-family: -apple-system, BlinkMacSystemFont, &#34;Segoe UI&#34;,
-               Roboto, Helvetica, Arial, sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, &#34;Segoe UI&#34;, Roboto, Helvetica, Arial, sans-serif !important;
   font-size: 17px !important;
   line-height: 1.65 !important;
   color: var(--text-main) !important;
@@ -54,7 +111,7 @@
 }
 
 .profile-wrapper strong {
-  color: #35425a !important;
+  color: var(--text-bold) !important;
   font-weight: 700 !important;
 }
 
@@ -65,10 +122,10 @@
   gap: 30px !important;
   margin: 0 0 30px 0 !important;
   padding: 24px 28px !important;
-  border: 1px solid rgba(140, 159, 226, 0.16) !important;
+  border: 1px solid var(--border-card) !important;
   border-radius: 16px !important;
-  background: linear-gradient(135deg, rgba(244, 247, 252, 0.95), rgba(250, 247, 253, 0.95)) !important;
-  box-shadow: 0 8px 26px rgba(55, 65, 81, 0.07) !important;
+  background: var(--bg-card) !important;
+  box-shadow: var(--shadow-card) !important;
 }
 
 .profile-wrapper .profile-photo {
@@ -84,7 +141,7 @@
   display: block !important;
   margin: 0 !important;
   border-radius: 13px !important;
-  border: 3px solid rgba(255, 255, 255, 0.9) !important;
+  border: 3px solid var(--avatar-border) !important;
   box-shadow: 0 7px 22px rgba(46, 55, 75, 0.14) !important;
 }
 
@@ -97,7 +154,7 @@
   margin: 0 0 4px 0 !important;
   font-size: 18px !important;
   line-height: 1.5 !important;
-  color: #3e4758 !important;
+  color: var(--text-role) !important;
   font-weight: 500 !important;
 }
 
@@ -105,7 +162,7 @@
   margin: 0 0 10px 0 !important;
   font-size: 16px !important;
   line-height: 1.55 !important;
-  color: #68717f !important;
+  color: var(--text-affil) !important;
 }
 
 /* Links */
@@ -149,7 +206,7 @@
   padding: 10px 14px !important;
   margin-bottom: 9px !important;
   border-left: 3px solid rgba(180, 135, 230, 0.42) !important;
-  background: rgba(247, 243, 252, 0.48) !important;
+  background: var(--bg-edu) !important;
   border-radius: 0 7px 7px 0 !important;
 }
 
@@ -157,22 +214,22 @@
   margin: 0 !important;
   font-size: 16.5px !important;
   font-weight: 650 !important;
-  color: #354052 !important;
+  color: var(--text-bold) !important;
 }
 
 .profile-wrapper p.education-detail {
   margin: 2px 0 0 0 !important;
   font-size: 14.5px !important;
-  color: #737d8c !important;
+  color: var(--text-detail) !important;
 }
 
 .profile-wrapper .publication-entry {
   margin-bottom: 18px !important;
   padding: 15px 18px !important;
-  border: 1px solid rgba(140, 159, 226, 0.18) !important;
+  border: 1px solid var(--border-card) !important;
   border-radius: 10px !important;
-  background: linear-gradient(135deg, rgba(247, 249, 253, 0.8), rgba(250, 248, 253, 0.85)) !important;
-  box-shadow: 0 3px 12px rgba(55, 65, 81, 0.045) !important;
+  background: var(--bg-card) !important;
+  box-shadow: var(--shadow-pub) !important;
 }
 
 .profile-wrapper p.publication-title {
@@ -180,13 +237,13 @@
   font-size: 16.5px !important;
   line-height: 1.5 !important;
   font-weight: 700 !important;
-  color: #344054 !important;
+  color: var(--text-bold) !important;
 }
 
 .profile-wrapper p.publication-authors {
   margin: 0 0 3px 0 !important;
   font-size: 14.5px !important;
-  color: #596373 !important;
+  color: var(--text-main) !important;
 }
 
 .profile-wrapper p.publication-venue {
@@ -194,7 +251,7 @@
   font-size: 14.5px !important;
   font-style: italic !important;
   font-weight: 500 !important;
-  color: #667085 !important;
+  color: var(--text-detail) !important;
 }
 
 .profile-wrapper p.publication-note {
@@ -202,8 +259,8 @@
   margin: 3px 0 0 0 !important;
   padding: 2px 7px !important;
   font-size: 12.5px !important;
-  color: #8b6bb0 !important;
-  background: rgba(180, 135, 230, 0.09) !important;
+  color: var(--note-text) !important;
+  background: var(--note-bg) !important;
   border-radius: 4px !important;
 }
 
@@ -225,7 +282,7 @@
 &lt;img src=&#34;https://yiyiwang22.github.io/me.jpeg&#34; alt=&#34;Portrait of Yiyi Wang&#34; class=&#34;avatar-img&#34;&gt;
 &lt;/div&gt;
 &lt;div class=&#34;profile-info&#34;&gt;
-&lt;!-- 彻底避免使用 h1，直接用 div + 内联样式定义名字大小（当前设为 22px，想更改直接修改 22px 即可） --&gt;
+&lt;!-- 彻底避免使用 h1，直接用 div + 内联样式定义名字大小 --&gt;
 &lt;div style=&#34;font-size: 20px !important; font-weight: 750 !important; color: #c99dfa !important; margin-bottom: 8px !important; line-height: 1.2 !important; display: block !important;&#34;&gt;Yiyi Wang&lt;/div&gt;
 &lt;p class=&#34;profile-role&#34;&gt;Ph.D. Student in Computer Science and Engineering&lt;/p&gt;</description>
       
