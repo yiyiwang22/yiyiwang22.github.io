@@ -20,12 +20,23 @@
         <description>&lt;style&gt;
   /* 核心样式表：采用深海蓝调，提升专业感并保护视力 */
   .profile-wrapper {
-    font-family: Georgia, &#39;Times New Roman&#39;, serif;
+    /* font-family: Georgia, &#39;Times New Roman&#39;, serif;
     line-height: 1.6;
     color: #333;
-    font-size: 1rem;
+    font-size: 0.9rem;
+    font-variant-numeric: lining-nums;
+  -webkit-font-feature-settings: &#34;lnum&#34;;
+  font-feature-settings: &#34;lnum&#34;; */
+  font-family: -apple-system, BlinkMacSystemFont, &#34;Segoe UI&#34;, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  font-size: 1rem;
   }
-  
+  /* 降低 strong 标签的加粗程度，使其更加精致 */
+  .profile-wrapper strong {
+    color: #4a5568; /* 改用深灰蓝色/深灰色，视觉上比纯黑柔和很多 */
+  font-weight: bold;
+  }
   /* 标题样式：使用深海蓝色 (#2a4d69) 替换橙色 */
   .profile-wrapper h1, 
   .profile-wrapper h3 {
@@ -35,6 +46,7 @@
     margin-bottom: 0.5em;
   }
   .profile-wrapper h4{
+    color: #c99dfa; 
     font-style: italic;
     margin-top: 0.1em;
     margin-bottom: 0.1em;
@@ -50,6 +62,7 @@
     color: #8c9fe2;
     text-decoration: underline;
     font-weight: bold;
+    font-size: 1rem; 
     border-bottom: 1px solid transparent;
     transition: all 0.3s ease;
   }
@@ -57,10 +70,13 @@
     color: #2a4d69;
     border-bottom: 1px solid #2a4d69;
   }
-  
+  .profile-wrapper .small-links a {
+  font-size: 0.6rem; /* 数值越小字号越小，可以根据需要调整成 0.8rem 或 13px */
+}
   /* 段落间距 */
   .profile-wrapper p {
     margin-bottom: 0.5em;
+    margin-top: 0.5em;
   }
 
   /* 列表样式优化 */
@@ -93,7 +109,7 @@
   }
 &lt;/style&gt;
 &lt;div class=&#34;profile-wrapper&#34;&gt;
-  &lt;h1&gt;About me&lt;/h1&gt;
+  &lt;h4&gt;About me&lt;/h4&gt;
   &lt;img src=&#34;https://yiyiwang22.github.io/me.jpeg&#34; alt=&#34;Yiyi Wang Avatar&#34; class=&#34;avatar-img&#34;&gt; 
   &lt;p&gt;Hi everyone, I&#39;m &lt;strong&gt;Yiyi Wang&lt;/strong&gt;, a Ph.D. student in Computer Science and Engineering at the University of South Florida. Currently, I am working under the supervision of Prof. &lt;a href=&#34;http://shareefahmed.myweb.usf.edu/&#34;&gt;Shareef Ahmed&lt;/a&gt;.&lt;/p&gt;</description>
       
