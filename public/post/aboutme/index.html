@@ -226,113 +226,45 @@
         <div class="post-content">
           <style>
 /* =========================================================
-   Academic Homepage — Yiyi Wang (Dark Mode Supported)
+   Academic Homepage — Dynamic Theme Adaptation
    ========================================================= */
 
 .profile-wrapper {
-  --accent: #8c9fe2;
-  --accent-dark: #687bc9;
-  --purple: #c99dfa;
-
-  /* ================= 日间模式 (Light Mode) 颜色 ================= */
-  --text-main: #303640;
-  --text-bold: #2e3440;
-  --text-role: #3e4758;
-  --text-affil: #68717f;
-  --text-detail: #737d8c;
-
-  --bg-card: linear-gradient(135deg, rgba(244, 247, 252, 0.95), rgba(250, 247, 253, 0.95));
-  --bg-edu: rgba(247, 243, 252, 0.48);
-  --border-card: rgba(140, 159, 226, 0.16);
-  --avatar-border: rgba(255, 255, 255, 0.9);
-
-  --note-text: #8b6bb0;
-  --note-bg: rgba(180, 135, 230, 0.09);
-  
-  --shadow-card: 0 8px 26px rgba(55, 65, 81, 0.07);
-  --shadow-pub: 0 3px 12px rgba(55, 65, 81, 0.045);
-
   max-width: 1000px;
   margin: 0 auto;
   padding: 18px 22px 36px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
   font-size: 17px !important;
   line-height: 1.65 !important;
-  color: var(--text-main) !important;
+  color: inherit !important; /* 彻底继承主题自带颜色 */
 }
 
-/* ================= 夜间模式 (Dark Mode) 颜色 ================= */
-/* 1. 适配系统级夜间模式 (如 macOS/Windows 系统设置为深色) */
-@media (prefers-color-scheme: dark) {
-  .profile-wrapper {
-    --text-main: #e5e7eb !important;
-    --text-bold: #f9fafb !important;
-    --text-role: #d1d5db !important;
-    --text-affil: #9ca3af !important;
-    --text-detail: #9ca3af !important;
-
-    --bg-card: rgba(31, 41, 55, 0.6) !important;
-    --bg-edu: rgba(55, 65, 81, 0.4) !important;
-    --border-card: rgba(255, 255, 255, 0.1) !important;
-    --avatar-border: #374151 !important;
-
-    --note-text: #c99dfa !important;
-    --note-bg: rgba(180, 135, 230, 0.15) !important;
-
-    --shadow-card: 0 8px 26px rgba(0, 0, 0, 0.5) !important;
-    --shadow-pub: 0 3px 12px rgba(0, 0, 0, 0.4) !important;
-  }
-}
-
-/* 2. 适配网站自带的夜间模式切换按钮 (Hugo 主题常用的全局 class) */
-html.dark .profile-wrapper,
-body.dark .profile-wrapper,
-[data-theme="dark"] .profile-wrapper {
-  --text-main: #e5e7eb !important;
-  --text-bold: #f9fafb !important;
-  --text-role: #d1d5db !important;
-  --text-affil: #9ca3af !important;
-  --text-detail: #9ca3af !important;
-
-  --bg-card: rgba(31, 41, 55, 0.6) !important;
-  --bg-edu: rgba(55, 65, 81, 0.4) !important;
-  --border-card: rgba(255, 255, 255, 0.1) !important;
-  --avatar-border: #374151 !important;
-
-  --note-text: #c99dfa !important;
-  --note-bg: rgba(180, 135, 230, 0.15) !important;
-
-  --shadow-card: 0 8px 26px rgba(0, 0, 0, 0.5) !important;
-  --shadow-pub: 0 3px 12px rgba(0, 0, 0, 0.4) !important;
-}
-
-/* ================= 基础组件样式 ================= */
-
+/* 基础文本 */
 .profile-wrapper p {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
   font-size: 17px !important;
   line-height: 1.65 !important;
-  color: var(--text-main) !important;
+  color: inherit !important;
   margin-top: 0 !important;
   margin-bottom: 10px !important;
 }
 
 .profile-wrapper strong {
-  color: var(--text-bold) !important;
+  color: inherit !important;
   font-weight: 700 !important;
 }
 
-/* Header Card */
+/* Header Card - 使用半透明背景，自动适应黑夜/白天 */
 .profile-wrapper .profile-header {
   display: flex !important;
   align-items: center !important;
   gap: 30px !important;
   margin: 0 0 30px 0 !important;
   padding: 24px 28px !important;
-  border: 1px solid var(--border-card) !important;
+  border: 1px solid rgba(140, 159, 226, 0.25) !important;
   border-radius: 16px !important;
-  background: var(--bg-card) !important;
-  box-shadow: var(--shadow-card) !important;
+  background: rgba(140, 159, 226, 0.06) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04) !important;
 }
 
 .profile-wrapper .profile-photo {
@@ -348,8 +280,8 @@ body.dark .profile-wrapper,
   display: block !important;
   margin: 0 !important;
   border-radius: 13px !important;
-  border: 3px solid var(--avatar-border) !important;
-  box-shadow: 0 7px 22px rgba(46, 55, 75, 0.14) !important;
+  border: 2px solid rgba(140, 159, 226, 0.3) !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1) !important;
 }
 
 .profile-wrapper .profile-info {
@@ -361,7 +293,7 @@ body.dark .profile-wrapper,
   margin: 0 0 4px 0 !important;
   font-size: 18px !important;
   line-height: 1.5 !important;
-  color: var(--text-role) !important;
+  opacity: 0.9 !important;
   font-weight: 500 !important;
 }
 
@@ -369,21 +301,20 @@ body.dark .profile-wrapper,
   margin: 0 0 10px 0 !important;
   font-size: 16px !important;
   line-height: 1.55 !important;
-  color: var(--text-affil) !important;
+  opacity: 0.75 !important;
 }
 
 /* Links */
 .profile-wrapper a {
-  color: var(--accent) !important;
+  color: #9d6ce6 !important;
   text-decoration: none !important;
   font-weight: 650 !important;
-  border-bottom: 1px solid rgba(140, 159, 226, 0.4) !important;
+  border-bottom: 1px solid rgba(157, 108, 230, 0.4) !important;
   transition: all 0.18s ease !important;
 }
 
 .profile-wrapper a:hover {
-  color: var(--accent-dark) !important;
-  border-bottom-color: var(--accent-dark) !important;
+  opacity: 0.8 !important;
 }
 
 .profile-wrapper p.profile-links {
@@ -396,9 +327,9 @@ body.dark .profile-wrapper,
   padding: 4px 10px !important;
   font-size: 14px !important;
   font-weight: 650 !important;
-  color: #7589d5 !important;
-  background: rgba(140, 159, 226, 0.08) !important;
-  border: 1px solid rgba(140, 159, 226, 0.24) !important;
+  color: #9d6ce6 !important;
+  background: rgba(157, 108, 230, 0.1) !important;
+  border: 1px solid rgba(157, 108, 230, 0.25) !important;
   border-radius: 6px !important;
   text-decoration: none !important;
 }
@@ -412,8 +343,8 @@ body.dark .profile-wrapper,
 .profile-wrapper .education-entry {
   padding: 10px 14px !important;
   margin-bottom: 9px !important;
-  border-left: 3px solid rgba(180, 135, 230, 0.42) !important;
-  background: var(--bg-edu) !important;
+  border-left: 3px solid #b487e6 !important;
+  background: rgba(180, 135, 230, 0.08) !important;
   border-radius: 0 7px 7px 0 !important;
 }
 
@@ -421,22 +352,22 @@ body.dark .profile-wrapper,
   margin: 0 !important;
   font-size: 16.5px !important;
   font-weight: 650 !important;
-  color: var(--text-bold) !important;
+  color: inherit !important;
 }
 
 .profile-wrapper p.education-detail {
   margin: 2px 0 0 0 !important;
   font-size: 14.5px !important;
-  color: var(--text-detail) !important;
+  opacity: 0.75 !important;
 }
 
 .profile-wrapper .publication-entry {
   margin-bottom: 18px !important;
   padding: 15px 18px !important;
-  border: 1px solid var(--border-card) !important;
+  border: 1px solid rgba(140, 159, 226, 0.2) !important;
   border-radius: 10px !important;
-  background: var(--bg-card) !important;
-  box-shadow: var(--shadow-pub) !important;
+  background: rgba(140, 159, 226, 0.05) !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03) !important;
 }
 
 .profile-wrapper p.publication-title {
@@ -444,13 +375,13 @@ body.dark .profile-wrapper,
   font-size: 16.5px !important;
   line-height: 1.5 !important;
   font-weight: 700 !important;
-  color: var(--text-bold) !important;
+  color: inherit !important;
 }
 
 .profile-wrapper p.publication-authors {
   margin: 0 0 3px 0 !important;
   font-size: 14.5px !important;
-  color: var(--text-main) !important;
+  opacity: 0.85 !important;
 }
 
 .profile-wrapper p.publication-venue {
@@ -458,7 +389,7 @@ body.dark .profile-wrapper,
   font-size: 14.5px !important;
   font-style: italic !important;
   font-weight: 500 !important;
-  color: var(--text-detail) !important;
+  opacity: 0.75 !important;
 }
 
 .profile-wrapper p.publication-note {
@@ -466,8 +397,8 @@ body.dark .profile-wrapper,
   margin: 3px 0 0 0 !important;
   padding: 2px 7px !important;
   font-size: 12.5px !important;
-  color: var(--note-text) !important;
-  background: var(--note-bg) !important;
+  color: #9d6ce6 !important;
+  background: rgba(157, 108, 230, 0.12) !important;
   border-radius: 4px !important;
 }
 
@@ -489,25 +420,22 @@ body.dark .profile-wrapper,
 <img src="https://yiyiwang22.github.io/me.jpeg" alt="Portrait of Yiyi Wang" class="avatar-img">
 </div>
 <div class="profile-info">
-<!-- 彻底避免使用 h1，直接用 div + 内联样式定义名字大小 -->
-<div style="font-size: 20px !important; font-weight: 750 !important; color: #c99dfa !important; margin-bottom: 8px !important; line-height: 1.2 !important; display: block !important;">Yiyi Wang</div>
+<div style="font-size: 20px !important; font-weight: 750 !important; color: #b487e6 !important; margin-bottom: 8px !important; line-height: 1.2 !important; display: block !important;">Yiyi Wang</div>
 <p class="profile-role">Ph.D. Student in Computer Science and Engineering</p>
 <p class="profile-affiliation">University of South Florida · Advised by <a href="http://shareefahmed.myweb.usf.edu/">Prof. Shareef Ahmed</a></p>
  <p class="profile-links"><a href="https://github.com/yiyiwang22">GitHub</a></p>
- <!-- <a href="https://www.linkedin.com/in/yiyi-wang-0551b7179/">LinkedIn</a></p> -->
 </div>
 </div>
 <div class="profile-section">
-<!-- 彻底避免使用 h2，改用带紫色前缀框的定制样式 -->
-<div style="font-size: 21px !important; font-weight: 750 !important; color: #c99dfa !important; margin-bottom: 14px !important; display: flex !important; align-items: center !important; background: none !important; padding: 0 !important; border: none !important;">
-  <span style="display: inline-block !important; width: 4px !important; height: 18px !important; background: #c99dfa !important; margin-right: 9px !important; border-radius: 2px !important;"></span>About
+<div style="font-size: 21px !important; font-weight: 750 !important; color: #b487e6 !important; margin-bottom: 14px !important; display: flex !important; align-items: center !important; background: none !important; padding: 0 !important; border: none !important;">
+  <span style="display: inline-block !important; width: 4px !important; height: 18px !important; background: #b487e6 !important; margin-right: 9px !important; border-radius: 2px !important;"></span>About
 </div>
 <p>My research focuses on <strong>real-time systems</strong>, particularly predictable scheduling, schedulability analysis, and resource management. I am interested in designing scheduling and resource-management mechanisms that provide analyzable timing guarantees for complex real-time workloads.</p>
 <p>My interest in systems research began at Wuhan University, where I built a five-stage pipelined CPU from scratch. This experience sparked my interest in computer architecture and, more broadly, in understanding and designing predictable computer systems.</p>
 </div>
 <div class="profile-section">
-<div style="font-size: 21px !important; font-weight: 750 !important; color: #c99dfa !important; margin-bottom: 14px !important; display: flex !important; align-items: center !important; background: none !important; padding: 0 !important; border: none !important;">
-  <span style="display: inline-block !important; width: 4px !important; height: 18px !important; background: #c99dfa !important; margin-right: 9px !important; border-radius: 2px !important;"></span>Education
+<div style="font-size: 21px !important; font-weight: 750 !important; color: #b487e6 !important; margin-bottom: 14px !important; display: flex !important; align-items: center !important; background: none !important; padding: 0 !important; border: none !important;">
+  <span style="display: inline-block !important; width: 4px !important; height: 18px !important; background: #b487e6 !important; margin-right: 9px !important; border-radius: 2px !important;"></span>Education
 </div>
 <div class="education-entry">
 <p class="education-degree">B.Eng., Computer Science and Technology</p>
@@ -519,8 +447,8 @@ body.dark .profile-wrapper,
 </div>
 </div>
 <div class="profile-section">
-<div style="font-size: 21px !important; font-weight: 750 !important; color: #c99dfa !important; margin-bottom: 14px !important; display: flex !important; align-items: center !important; background: none !important; padding: 0 !important; border: none !important;">
-  <span style="display: inline-block !important; width: 4px !important; height: 18px !important; background: #c99dfa !important; margin-right: 9px !important; border-radius: 2px !important;"></span>Publications
+<div style="font-size: 21px !important; font-weight: 750 !important; color: #b487e6 !important; margin-bottom: 14px !important; display: flex !important; align-items: center !important; background: none !important; padding: 0 !important; border: none !important;">
+  <span style="display: inline-block !important; width: 4px !important; height: 18px !important; background: #b487e6 !important; margin-right: 9px !important; border-radius: 2px !important;"></span>Publications
 </div>
 <div class="publication-entry">
 <p class="publication-title">Schedulability Analysis for Pub-Sub Graphs Under Global EDF Scheduling</p>
