@@ -5,135 +5,261 @@ hide_meta: true
 ---
 
 <style>
-  /* 核心样式表：采用深海蓝调，提升专业感并保护视力 */
-  .profile-wrapper {
-    /* font-family: Georgia, 'Times New Roman', serif;
-    line-height: 1.6;
-    color: #333;
-    font-size: 0.9rem;
-    font-variant-numeric: lining-nums;
-  -webkit-font-feature-settings: "lnum";
-  font-feature-settings: "lnum"; */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  font-size: 1rem;
-  }
-  /* 降低 strong 标签的加粗程度，使其更加精致 */
-  .profile-wrapper strong {
-    color: #4a5568; /* 改用深灰蓝色/深灰色，视觉上比纯黑柔和很多 */
-  font-weight: bold;
-  }
-  /* 标题样式：使用深海蓝色 (#2a4d69) 替换橙色 */
-  .profile-wrapper h1, 
-  .profile-wrapper h3 {
-    color: #c99dfa; 
-    font-style: italic;
-    margin-top: 0.8em;
-    margin-bottom: 0.5em;
-  }
-  .profile-wrapper h4{
-    color: #c99dfa; 
-    font-style: italic;
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-  }
-    .profile-wrapper h6{
-    color: #c99dfa; 
-    font-style: italic;
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-  }
-  /* 超链接样式：深蓝色调，加粗以示区分 */
-  .profile-wrapper a {
-    color: #8c9fe2;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 1rem; 
-    border-bottom: 1px solid transparent;
-    transition: all 0.3s ease;
-  }
-  .profile-wrapper a:hover {
-    color: #2a4d69;
-    border-bottom: 1px solid #2a4d69;
-  }
-  .profile-wrapper .small-links a {
-  font-size: 0.6rem; /* 数值越小字号越小，可以根据需要调整成 0.8rem 或 13px */
+/* =========================================================
+   Academic Homepage — Yiyi Wang
+   ========================================================= */
+
+.profile-wrapper {
+  --accent: #8c9fe2;
+  --accent-dark: #687bc9;
+  --purple: #c99dfa;
+
+  --text-main: #303640;
+  --text-secondary: #596373;
+
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 18px 22px 36px;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif !important;
+
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: var(--text-main) !important;
 }
-  /* 段落间距 */
-  .profile-wrapper p {
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-  }
 
-  /* 列表样式优化 */
-  .profile-wrapper ul {
-    margin-left: 20px;
-    margin-bottom: 1.0em;
-  }
-  .profile-wrapper li {
-    margin-bottom: 0.6em;
-  }
-  
-  /* 头像样式 */
-  .avatar-img {
-    max-width: 150px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
-    display: block;
-  }
+/* 基础文本与粗体 */
+.profile-wrapper p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  color: var(--text-main) !important;
+  margin-top: 0 !important;
+  margin-bottom: 10px !important;
+}
 
-  /* 底部硬核徽章 */
-  .geek-badge {
-    font-size: 0.85rem;
-    color: #7f8c8d;
-    font-style: italic;
-    text-align: center;
-    margin-top: 40px;
-    border-top: 1px solid #ecf0f1;
-    padding-top: 15px;
+.profile-wrapper strong {
+  color: #35425a !important;
+  font-weight: 700 !important;
+}
+
+/* Header Card */
+.profile-wrapper .profile-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 30px !important;
+  margin: 0 0 30px 0 !important;
+  padding: 24px 28px !important;
+  border: 1px solid rgba(140, 159, 226, 0.16) !important;
+  border-radius: 16px !important;
+  background: linear-gradient(135deg, rgba(244, 247, 252, 0.95), rgba(250, 247, 253, 0.95)) !important;
+  box-shadow: 0 8px 26px rgba(55, 65, 81, 0.07) !important;
+}
+
+.profile-wrapper .profile-photo {
+  flex: 0 0 150px !important;
+}
+
+.profile-wrapper img.avatar-img {
+  width: 150px !important;
+  height: 150px !important;
+  max-width: 150px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  margin: 0 !important;
+  border-radius: 13px !important;
+  border: 3px solid rgba(255, 255, 255, 0.9) !important;
+  box-shadow: 0 7px 22px rgba(46, 55, 75, 0.14) !important;
+}
+
+.profile-wrapper .profile-info {
+  flex: 1 !important;
+  min-width: 0 !important;
+}
+
+.profile-wrapper p.profile-role {
+  margin: 0 0 4px 0 !important;
+  font-size: 18px !important;
+  line-height: 1.5 !important;
+  color: #3e4758 !important;
+  font-weight: 500 !important;
+}
+
+.profile-wrapper p.profile-affiliation {
+  margin: 0 0 10px 0 !important;
+  font-size: 16px !important;
+  line-height: 1.55 !important;
+  color: #68717f !important;
+}
+
+/* Links */
+.profile-wrapper a {
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  font-weight: 650 !important;
+  border-bottom: 1px solid rgba(140, 159, 226, 0.4) !important;
+  transition: all 0.18s ease !important;
+}
+
+.profile-wrapper a:hover {
+  color: var(--accent-dark) !important;
+  border-bottom-color: var(--accent-dark) !important;
+}
+
+.profile-wrapper p.profile-links {
+  margin: 12px 0 0 0 !important;
+  font-size: 14px !important;
+}
+
+.profile-wrapper .profile-links a {
+  display: inline-block !important;
+  padding: 4px 10px !important;
+  font-size: 14px !important;
+  font-weight: 650 !important;
+  color: #7589d5 !important;
+  background: rgba(140, 159, 226, 0.08) !important;
+  border: 1px solid rgba(140, 159, 226, 0.24) !important;
+  border-radius: 6px !important;
+  text-decoration: none !important;
+}
+
+/* Sections */
+.profile-wrapper .profile-section {
+  margin-top: 27px !important;
+}
+
+/* Education & Publication */
+.profile-wrapper .education-entry {
+  padding: 10px 14px !important;
+  margin-bottom: 9px !important;
+  border-left: 3px solid rgba(180, 135, 230, 0.42) !important;
+  background: rgba(247, 243, 252, 0.48) !important;
+  border-radius: 0 7px 7px 0 !important;
+}
+
+.profile-wrapper p.education-degree {
+  margin: 0 !important;
+  font-size: 16.5px !important;
+  font-weight: 650 !important;
+  color: #354052 !important;
+}
+
+.profile-wrapper p.education-detail {
+  margin: 2px 0 0 0 !important;
+  font-size: 14.5px !important;
+  color: #737d8c !important;
+}
+
+.profile-wrapper .publication-entry {
+  margin-bottom: 18px !important;
+  padding: 15px 18px !important;
+  border: 1px solid rgba(140, 159, 226, 0.18) !important;
+  border-radius: 10px !important;
+  background: linear-gradient(135deg, rgba(247, 249, 253, 0.8), rgba(250, 248, 253, 0.85)) !important;
+  box-shadow: 0 3px 12px rgba(55, 65, 81, 0.045) !important;
+}
+
+.profile-wrapper p.publication-title {
+  margin: 0 0 5px 0 !important;
+  font-size: 16.5px !important;
+  line-height: 1.5 !important;
+  font-weight: 700 !important;
+  color: #344054 !important;
+}
+
+.profile-wrapper p.publication-authors {
+  margin: 0 0 3px 0 !important;
+  font-size: 14.5px !important;
+  color: #596373 !important;
+}
+
+.profile-wrapper p.publication-venue {
+  margin: 0 0 4px 0 !important;
+  font-size: 14.5px !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+  color: #667085 !important;
+}
+
+.profile-wrapper p.publication-note {
+  display: inline-block !important;
+  margin: 3px 0 0 0 !important;
+  padding: 2px 7px !important;
+  font-size: 12.5px !important;
+  color: #8b6bb0 !important;
+  background: rgba(180, 135, 230, 0.09) !important;
+  border-radius: 4px !important;
+}
+
+@media (max-width: 700px) {
+  .profile-wrapper .profile-header {
+    flex-direction: column !important;
+    gap: 16px !important;
+    padding: 20px 17px !important;
+    text-align: center !important;
   }
+  .profile-wrapper .profile-photo {
+    flex: none !important;
+  }
+}
 </style>
 
 <div class="profile-wrapper">
+<div class="profile-header">
+<div class="profile-photo">
+<img src="https://yiyiwang22.github.io/me.jpeg" alt="Portrait of Yiyi Wang" class="avatar-img">
+</div>
+<div class="profile-info">
+<!-- 彻底避免使用 h1，直接用 div + 内联样式定义名字大小（当前设为 22px，想更改直接修改 22px 即可） -->
+<div style="font-size: 20px !important; font-weight: 750 !important; color: #c99dfa !important; margin-bottom: 8px !important; line-height: 1.2 !important; display: block !important;">Yiyi Wang</div>
+<p class="profile-role">Ph.D. Student in Computer Science and Engineering</p>
+<p class="profile-affiliation">University of South Florida · Advised by <a href="http://shareefahmed.myweb.usf.edu/">Prof. Shareef Ahmed</a></p>
+<p class="profile-links"><a href="https://github.com/yiyiwang22">GitHub</a>  <a href="https://www.linkedin.com/in/yiyi-wang-0551b7179/">LinkedIn</a></p>
+</div>
+</div>
 
-  <h4>About me</h4>
+<div class="profile-section">
+<!-- 彻底避免使用 h2，改用带紫色前缀框的定制样式 -->
+<div style="font-size: 21px !important; font-weight: 750 !important; color: #c99dfa !important; margin-bottom: 14px !important; display: flex !important; align-items: center !important; background: none !important; padding: 0 !important; border: none !important;">
+  <span style="display: inline-block !important; width: 4px !important; height: 18px !important; background: #c99dfa !important; margin-right: 9px !important; border-radius: 2px !important;"></span>About
+</div>
+<p>My research focuses on <strong>real-time systems</strong>, particularly predictable scheduling, schedulability analysis, and resource management. I am interested in designing scheduling and resource-management mechanisms that provide analyzable timing guarantees for complex real-time workloads.</p>
+<p>My interest in systems research began at Wuhan University, where I built a five-stage pipelined CPU from scratch. This experience sparked my interest in computer architecture and, more broadly, in understanding and designing predictable computer systems.</p>
+</div>
 
-  <img src="https://yiyiwang22.github.io/me.jpeg" alt="Yiyi Wang Avatar" class="avatar-img"> 
+<div class="profile-section">
+<div style="font-size: 21px !important; font-weight: 750 !important; color: #c99dfa !important; margin-bottom: 14px !important; display: flex !important; align-items: center !important; background: none !important; padding: 0 !important; border: none !important;">
+  <span style="display: inline-block !important; width: 4px !important; height: 18px !important; background: #c99dfa !important; margin-right: 9px !important; border-radius: 2px !important;"></span>Education
+</div>
+<div class="education-entry">
+<p class="education-degree">B.Eng., Computer Science and Technology</p>
+<p class="education-detail">Wuhan University · Top 10%</p>
+</div>
+<div class="education-entry">
+<p class="education-degree">M.A., Language Technology</p>
+<p class="education-detail">University of Gothenburg · Master's Thesis: Pass with Distinction</p>
+</div>
+</div>
 
-  <p>Hi everyone, I'm <strong>Yiyi Wang</strong>, a Ph.D. student in Computer Science and Engineering at the University of South Florida. Currently, I am working under the supervision of Prof. <a href="http://shareefahmed.myweb.usf.edu/">Shareef Ahmed</a>.</p>
+<div class="profile-section">
+<div style="font-size: 21px !important; font-weight: 750 !important; color: #c99dfa !important; margin-bottom: 14px !important; display: flex !important; align-items: center !important; background: none !important; padding: 0 !important; border: none !important;">
+  <span style="display: inline-block !important; width: 4px !important; height: 18px !important; background: #c99dfa !important; margin-right: 9px !important; border-radius: 2px !important;"></span>Publications
+</div>
+<div class="publication-entry">
+<p class="publication-title">Schedulability Analysis for Pub-Sub Graphs Under Global EDF Scheduling</p>
+<p class="publication-authors">S. Ahmed, S. Liu, <strong>Y. Wang</strong>, R. Wagle, and J. Anderson</p>
+<p class="publication-venue">47th IEEE Real-Time Systems Symposium (RTSS)</p>
+<p class="publication-note">Acceptance rate: 14.3%</p>
+</div>
+</div>
 
-  <p>My research is deeply rooted in <strong>Real-Time Systems (RTS)</strong>. I focus on exploring and developing predictable scheduling frameworks to optimize underlying system performance and resource allocation.</p>
-
- <p>My journey into systems research started at Wuhan University, where building a 5-stage pipelined CPU from scratch sparked my deep interest in computer architecture. Prior to USF, I earned my Master's degree in Language Technology (with Distinction) from the University of Gothenburg, and my Bachelor's degree (Top 10%) from Wuhan University.
-  <h6>Publication</h6>
-    <p>S. Ahmed, S. Liu, <strong>Y. Wang</strong>, R. Wagle, J. Anderson, "Schedulability Analysis for Pub-Sub Graphs Under Global EDF Scheduling", 47th IEEE Real-Time Systems Symposium. <span style="color: #e74c3c;">(Acceptance Rate 14.3%)</span></p>
-    
-  <!-- <h6>Links</h6><a href="https://github.com/yiyiwang22">My GitHub</a>
-    <a href="https://www.linkedin.com/in/yiyi-wang-0551b7179/">My LinkedIn</a> 
- -->
-<p class="small-links">
-  <a href="https://github.com/yiyiwang22">My GitHub</a> | 
-  <a href="https://www.linkedin.com/in/yiyi-wang-0551b7179/">My LinkedIn</a>
-</p>
-<!-- 
-  <h6>Interests</h6>
-  <p>I enjoy popping dance and writing rap songs. </p> -->
-
-  <br>
-
-  <!-- <div align="center" style="width: 100%; max-width: 600px; margin: 0 auto;">
-    <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=-GaSbw50DLBdzn-j28l6bWkfIuvhsMmIZ8RSzzEb-6g&cl=ffffff&w=a"></script>
-      </div> -->
-  <!-- 隐形访客统计 -->
 <script>
-  (function() {
-    var trackerUrl = "https://rough-dust-8d76.yw22.workers.dev";
-    
-    fetch(trackerUrl, { method: "POST" }).catch(function() {
-    });
-  })();
+(function() {
+  var trackerUrl = "https://rough-dust-8d76.yw22.workers.dev";
+  fetch(trackerUrl, { method: "POST" }).catch(function() {});
+})();
 </script>
-
 </div>
