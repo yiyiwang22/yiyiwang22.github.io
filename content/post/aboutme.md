@@ -244,7 +244,7 @@ hide_meta: true
 
 <script>
 (function() {
-  var trackerUrl = "https://rough-dust-8d76.yw22.workers.dev";
+  var trackerUrl = "https://api.wyy123.top";
   fetch(trackerUrl, { method: "POST" }).catch(function() {});
 })();
 </script>
